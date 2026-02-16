@@ -87,26 +87,22 @@ All colors are mapped 1:1 from the JetBrains themes, covering full workbench UI,
 
 ### Installation
 
-1. Create a local extension directory:
+1. Create a local extension directory and copy the theme files:
 
    ```bash
-   mkdir -p ~/.vscode/extensions/nord-islands-theme/themes
+   mkdir -p ~/.vscode/extensions/nord-islands.nord-islands-theme-1.0.0/themes
+   cp vscode/nord-islands-*-color-theme.json \
+      ~/.vscode/extensions/nord-islands.nord-islands-theme-1.0.0/themes/
    ```
 
-2. Copy the theme files:
+2. Create a `package.json` in the extension directory:
 
    ```bash
-   cp vscode/nord-islands-dark-color-theme.json ~/.vscode/extensions/nord-islands-theme/themes/
-   cp vscode/nord-islands-light-color-theme.json ~/.vscode/extensions/nord-islands-theme/themes/
-   ```
-
-3. Create a minimal `package.json` in the extension directory:
-
-   ```bash
-   cat > ~/.vscode/extensions/nord-islands-theme/package.json << 'EOF'
+   cat > ~/.vscode/extensions/nord-islands.nord-islands-theme-1.0.0/package.json << 'EOF'
    {
      "name": "nord-islands-theme",
      "displayName": "Nord Islands Theme",
+     "publisher": "nord-islands",
      "version": "1.0.0",
      "engines": { "vscode": "^1.60.0" },
      "categories": ["Themes"],
@@ -128,7 +124,7 @@ All colors are mapped 1:1 from the JetBrains themes, covering full workbench UI,
    EOF
    ```
 
-4. Restart VS Code, then open **Settings > Color Theme** and select **Nord Islands Dark** or **Nord Islands Light**.
+3. Quit VS Code completely (`Cmd+Q` / `Alt+F4`) and reopen it. Open **Settings > Color Theme** (`Cmd+K Cmd+T` / `Ctrl+K Ctrl+T`) and select **Nord Islands Dark** or **Nord Islands Light**.
 
 ## btop Themes
 
