@@ -292,7 +292,7 @@
     <!-- Annotations / Decorators / Metadata -->
     <option name="DEFAULT_METADATA">
       <value>
-        <option name="FOREGROUND" value="B86842" />
+        <option name="FOREGROUND" value="B8860E" />
       </value>
     </option>
 
@@ -408,9 +408,9 @@
     <!-- TODO -->
     <option name="TODO_DEFAULT_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="B8860E" />
+        <option name="FOREGROUND" value="B86842" />
         <option name="FONT_TYPE" value="3" />
-        <option name="ERROR_STRIPE_COLOR" value="C8A62E" />
+        <option name="ERROR_STRIPE_COLOR" value="B86842" />
       </value>
     </option>
 
