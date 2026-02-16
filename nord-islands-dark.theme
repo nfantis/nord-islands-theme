@@ -1,0 +1,74 @@
+# Nord Islands Dark theme for btop
+# Part of the Nord Islands theme project (https://github.com/nfantis/nord-islands-theme)
+# Combines the Nord color palette with a deeper background for improved contrast.
+#
+# Colors should be in 6 or 2 character hexadecimal or single spaced rgb decimal: "#RRGGBB", "#BW" or "0-255 0-255 0-255"
+#
+# All graphs and meters can be gradients
+# For single color graphs leave "mid" and "end" variable empty.
+# Use "start" and "end" variables for two color gradient
+# Use "start", "mid" and "end" for three color gradient
+
+# Main background and text
+theme[main_bg]="#21252D"
+theme[main_fg]="#D8DEE9"
+theme[title]="#88C0D0"
+theme[hi_fg]="#8FBCBB"
+theme[selected_bg]="#434C5E"
+theme[selected_fg]="#ECEFF4"
+theme[inactive_fg]="#4C566A"
+theme[graph_text]="#D8DEE9"
+theme[meter_bg]="#3B4252"
+theme[proc_misc]="#81A1C1"
+
+# Box outlines — distinct colors per section
+theme[cpu_box]="#88C0D0"
+theme[mem_box]="#A3BE8C"
+theme[net_box]="#B48EAD"
+theme[proc_box]="#81A1C1"
+theme[div_line]="#4C566A"
+
+# Temperature gradient (cool green -> warm yellow -> hot red)
+theme[temp_start]="#A3BE8C"
+theme[temp_mid]="#EBCB8B"
+theme[temp_end]="#BF616A"
+
+# CPU usage gradient (deep blue -> blue -> cyan)
+theme[cpu_start]="#5E81AC"
+theme[cpu_mid]="#81A1C1"
+theme[cpu_end]="#88C0D0"
+
+# Memory free gradient (green -> teal -> cyan)
+theme[free_start]="#A3BE8C"
+theme[free_mid]="#8FBCBB"
+theme[free_end]="#88C0D0"
+
+# Memory cached gradient (blue -> cyan -> teal)
+theme[cached_start]="#81A1C1"
+theme[cached_mid]="#88C0D0"
+theme[cached_end]="#8FBCBB"
+
+# Memory available gradient (green -> teal -> light)
+theme[available_start]="#A3BE8C"
+theme[available_mid]="#8FBCBB"
+theme[available_end]="#D8DEE9"
+
+# Memory used gradient (orange -> yellow -> red)
+theme[used_start]="#D08770"
+theme[used_mid]="#EBCB8B"
+theme[used_end]="#BF616A"
+
+# Download gradient (teal -> cyan -> blue)
+theme[download_start]="#8FBCBB"
+theme[download_mid]="#88C0D0"
+theme[download_end]="#81A1C1"
+
+# Upload gradient (purple -> orange -> yellow)
+theme[upload_start]="#B48EAD"
+theme[upload_mid]="#D08770"
+theme[upload_end]="#EBCB8B"
+
+# Process CPU usage gradient (deep blue -> blue -> cyan)
+theme[process_start]="#5E81AC"
+theme[process_mid]="#81A1C1"
+theme[process_end]="#88C0D0"

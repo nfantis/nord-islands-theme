@@ -1,6 +1,6 @@
 # Nord Islands
 
-Dark and light themes for JetBrains IDEs combining the [Islands UI](https://plugins.jetbrains.com/docs/intellij/themes-getting-started.html) layout with the [Nord](https://www.nordtheme.com/) color palette. Uses Nord's arctic blue-gray tones for all IDE chrome, panels, and editor highlighting.
+Dark and light themes combining the [Nord](https://www.nordtheme.com/) color palette with a deeper background for improved contrast. Includes themes for [JetBrains IDEs](https://plugins.jetbrains.com/docs/intellij/themes-getting-started.html) (Islands UI), [btop](https://github.com/aristocratos/btop), and [iTerm2](https://iterm2.com/).
 
 ## Nord Islands Dark
 
@@ -76,6 +76,41 @@ The distributable plugin ZIP will be in `build/distributions/`.
 3. Select the ZIP file and restart the IDE.
 4. Go to **Settings > Appearance & Behavior > Appearance** and select **Nord Islands Dark** or **Nord Islands Light**.
 
+## btop Themes
+
+Theme files for [btop](https://github.com/aristocratos/btop) are included for both variants:
+
+- [`nord-islands-dark.theme`](nord-islands-dark.theme) -- dark background (`#21252D`)
+- [`nord-islands-light.theme`](nord-islands-light.theme) -- light background (`#ECEFF4`)
+
+Unlike the built-in Nord btop theme (which uses the same blue-to-white gradient for every metric), Nord Islands uses **distinct, semantically meaningful gradients** leveraging the full Aurora and Frost palettes:
+
+| Metric | Gradient | Rationale |
+|--------|----------|-----------|
+| Temperature | Green → Yellow → Red | Intuitive cool-to-hot |
+| CPU | Deep Blue → Blue → Cyan | Frost palette progression |
+| Free memory | Green → Teal → Cyan | Green = available |
+| Used memory | Orange → Yellow → Red | Warm = resource pressure |
+| Download | Teal → Cyan → Blue | Cool tones for inbound |
+| Upload | Purple → Orange → Yellow | Warm tones for outbound |
+
+Each box section (CPU, Memory, Network, Processes) also has a distinct outline color for easy identification.
+
+### Installation
+
+1. Copy the theme file to your btop themes directory:
+
+   ```bash
+   # Create the directory if it doesn't exist
+   mkdir -p ~/.config/btop/themes
+
+   # Copy one or both themes
+   cp nord-islands-dark.theme ~/.config/btop/themes/
+   cp nord-islands-light.theme ~/.config/btop/themes/
+   ```
+
+2. In btop, press `Esc` to open the menu, select **Options**, and choose **nord-islands-dark** or **nord-islands-light** from the color theme list.
+
 ## iTerm2 Themes
 
 iTerm2 color profiles are included for both variants:
@@ -95,6 +130,10 @@ iTerm2 color profiles are included for both variants:
 ## Project Structure
 
 ```
+nord-islands-dark.theme               # btop dark theme
+nord-islands-light.theme               # btop light theme
+Nord_Islands_Dark.itermcolors          # iTerm2 dark profile
+Nord_Islands_Light.itermcolors         # iTerm2 light profile
 src/main/resources/
 ├── META-INF/
 │   └── plugin.xml                    # Plugin descriptor
