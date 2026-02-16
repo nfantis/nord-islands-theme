@@ -1,6 +1,6 @@
 # Nord Islands
 
-Dark and light themes combining the [Nord](https://www.nordtheme.com/) color palette with a deeper background for improved contrast. Includes themes for [JetBrains IDEs](https://plugins.jetbrains.com/docs/intellij/themes-getting-started.html) (Islands UI), [btop](https://github.com/aristocratos/btop), and [iTerm2](https://iterm2.com/).
+Dark and light themes combining the [Nord](https://www.nordtheme.com/) color palette with a deeper background for improved contrast. Includes themes for [JetBrains IDEs](https://plugins.jetbrains.com/docs/intellij/themes-getting-started.html) (Islands UI), [VS Code](https://code.visualstudio.com/), [btop](https://github.com/aristocratos/btop), and [iTerm2](https://iterm2.com/).
 
 ## Nord Islands Dark
 
@@ -76,6 +76,60 @@ The distributable plugin ZIP will be in `build/distributions/`.
 3. Select the ZIP file and restart the IDE.
 4. Go to **Settings > Appearance & Behavior > Appearance** and select **Nord Islands Dark** or **Nord Islands Light**.
 
+## VS Code Themes
+
+Standalone color theme files for [Visual Studio Code](https://code.visualstudio.com/) are included for both variants:
+
+- [`nord-islands-dark-color-theme.json`](vscode/nord-islands-dark-color-theme.json) -- dark background (`#21252D`)
+- [`nord-islands-light-color-theme.json`](vscode/nord-islands-light-color-theme.json) -- light background (`#ECEFF4`)
+
+All colors are mapped 1:1 from the JetBrains themes, covering full workbench UI, syntax highlighting (~50 token rules), semantic token colors, terminal ANSI palette, git decorations, diff/merge, debug, and minimap.
+
+### Installation
+
+1. Create a local extension directory:
+
+   ```bash
+   mkdir -p ~/.vscode/extensions/nord-islands-theme/themes
+   ```
+
+2. Copy the theme files:
+
+   ```bash
+   cp vscode/nord-islands-dark-color-theme.json ~/.vscode/extensions/nord-islands-theme/themes/
+   cp vscode/nord-islands-light-color-theme.json ~/.vscode/extensions/nord-islands-theme/themes/
+   ```
+
+3. Create a minimal `package.json` in the extension directory:
+
+   ```bash
+   cat > ~/.vscode/extensions/nord-islands-theme/package.json << 'EOF'
+   {
+     "name": "nord-islands-theme",
+     "displayName": "Nord Islands Theme",
+     "version": "1.0.0",
+     "engines": { "vscode": "^1.60.0" },
+     "categories": ["Themes"],
+     "contributes": {
+       "themes": [
+         {
+           "label": "Nord Islands Dark",
+           "uiTheme": "vs-dark",
+           "path": "./themes/nord-islands-dark-color-theme.json"
+         },
+         {
+           "label": "Nord Islands Light",
+           "uiTheme": "vs",
+           "path": "./themes/nord-islands-light-color-theme.json"
+         }
+       ]
+     }
+   }
+   EOF
+   ```
+
+4. Restart VS Code, then open **Settings > Color Theme** and select **Nord Islands Dark** or **Nord Islands Light**.
+
 ## btop Themes
 
 Theme files for [btop](https://github.com/aristocratos/btop) are included for both variants:
@@ -136,6 +190,9 @@ btop/
 iterm/
 ├── Nord_Islands_Dark.itermcolors      # iTerm2 dark profile
 └── Nord_Islands_Light.itermcolors     # iTerm2 light profile
+vscode/
+├── nord-islands-dark-color-theme.json # VS Code dark theme
+└── nord-islands-light-color-theme.json # VS Code light theme
 src/main/resources/
 ├── META-INF/
 │   └── plugin.xml                    # Plugin descriptor
