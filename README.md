@@ -1,27 +1,37 @@
-# Nord Islands Dark
+# Nord Islands
 
-A dark theme for JetBrains IDEs combining the [Islands UI](https://plugins.jetbrains.com/docs/intellij/themes-getting-started.html) layout with the [Nord](https://www.nordtheme.com/) color palette. Uses Nord's arctic blue-gray tones for all IDE chrome, panels, and editor highlighting.
+Dark and light themes for JetBrains IDEs combining the [Islands UI](https://plugins.jetbrains.com/docs/intellij/themes-getting-started.html) layout with the [Nord](https://www.nordtheme.com/) color palette. Uses Nord's arctic blue-gray tones for all IDE chrome, panels, and editor highlighting.
+
+## Nord Islands Dark
 
 ![Nord Islands Dark screenshot](images/screenshot.png)
 
+Uses the **Polar Night** palette for backgrounds with **Snow Storm** foregrounds, creating a deep arctic dark theme.
+
+## Nord Islands Light
+
+![Nord Islands Light screenshot](images/screenshot3.png)
+
+Uses the **Snow Storm** palette for backgrounds with **Polar Night** foregrounds, emphasizing the **Frost** accent colors for a clean, cool light theme.
+
 ## Color Palette
 
-| Category        | Purpose      | Colors                                                            |
-|-----------------|--------------|-------------------------------------------------------------------|
-| **Polar Night** | Backgrounds  | `#21252D` `#3B4252` `#434C5E` `#4C566A`                          |
-| **Snow Storm**  | Foregrounds  | `#D8DEE9` `#E5E9F0` `#ECEFF4`                                    |
-| **Frost**       | Accents      | `#8FBCBB` `#88C0D0` `#81A1C1` `#5E81AC`                          |
-| **Aurora**      | Highlights   | Red `#BF616A` Orange `#D08770` Yellow `#EBCB8B` Green `#A3BE8C` Purple `#B48EAD` |
+| Category        | Purpose                | Dark Theme Role | Light Theme Role |
+|-----------------|------------------------|-----------------|------------------|
+| **Polar Night** | `#2E3440` `#3B4252` `#434C5E` `#4C566A` | Backgrounds | Foregrounds |
+| **Snow Storm**  | `#D8DEE9` `#E5E9F0` `#ECEFF4`           | Foregrounds | Backgrounds |
+| **Frost**       | `#8FBCBB` `#88C0D0` `#81A1C1` `#5E81AC` | Accents     | Accents     |
+| **Aurora**      | Red `#BF616A` Orange `#D08770` Yellow `#EBCB8B` Green `#A3BE8C` Purple `#B48EAD` | Highlights | Highlights |
 
 ### Differences from Official Nord
 
-15 of the 16 [official Nord colors](https://www.nordtheme.com/docs/colors-and-palettes) are used exactly as specified. The one intentional change is the primary background (`polarNight0`), which is darkened from `#2E3440` to `#21252D` for deeper contrast.
+15 of the 16 [official Nord colors](https://www.nordtheme.com/docs/colors-and-palettes) are used exactly as specified. The one intentional change is the dark theme's primary background (`polarNight0`), which is darkened from `#2E3440` to `#21252D` for deeper contrast. The light theme uses the official Snow Storm values unmodified.
 
 A few additional colors not in the official palette are used where needed:
 
-- `#616E88` for comments — a widely adopted convention across Nord editor ports, sitting between nord3 and nord4 in brightness.
-- `#33394A` for injected/template language backgrounds — a custom shade blending into the Polar Night range.
-- Darkened Aurora blends (e.g., `#402A2A`, `#2E4A2E`) for subtle UI backgrounds like error banners and diff highlights.
+- `#616E88` / `#8790A3` for comments (dark / light) -- widely adopted convention across Nord editor ports, sitting between nord3 and nord4 in brightness.
+- `#33394A` / `#E0E5EE` for injected/template language backgrounds -- custom shades blending into the Polar Night / Snow Storm ranges.
+- Tinted Aurora blends for subtle UI backgrounds like error banners and diff highlights (darkened for dark theme, lightened for light theme).
 
 ## Features
 
@@ -64,19 +74,23 @@ The distributable plugin ZIP will be in `build/distributions/`.
 1. Build the plugin (see above) or download the ZIP from [Releases](#).
 2. In your JetBrains IDE, go to **Settings > Plugins > Gear icon > Install Plugin from Disk...**
 3. Select the ZIP file and restart the IDE.
-4. Go to **Settings > Appearance & Behavior > Appearance** and select **Nord Islands Dark**.
+4. Go to **Settings > Appearance & Behavior > Appearance** and select **Nord Islands Dark** or **Nord Islands Light**.
 
-## iTerm2 Theme
+## iTerm2 Themes
 
-An iTerm2 color profile is included at [`Nord_Islands_Dark.itermcolors`](Nord_Islands_Dark.itermcolors). It uses the same Nord palette as the JetBrains theme with the darker `#21252D` background.
+iTerm2 color profiles are included for both variants:
+
+- [`Nord_Islands_Dark.itermcolors`](Nord_Islands_Dark.itermcolors) -- dark background (`#21252D`)
+- [`Nord_Islands_Light.itermcolors`](Nord_Islands_Light.itermcolors) -- light background (`#ECEFF4`)
 
 ![Nord Islands Dark iTerm2 colors](images/screenshot2.png)
+![Nord Islands Light iTerm2 colors](images/screenshot4.png)
 
 ### Installation
 
 1. Open iTerm2 and go to **Settings > Profiles > Colors**.
-2. Click **Color Presets... > Import...** and select `Nord_Islands_Dark.itermcolors`.
-3. Select **Nord Islands Dark** from the Color Presets dropdown.
+2. Click **Color Presets... > Import...** and select the `.itermcolors` file.
+3. Select **Nord Islands Dark** or **Nord Islands Light** from the Color Presets dropdown.
 
 ## Project Structure
 
@@ -85,8 +99,10 @@ src/main/resources/
 ├── META-INF/
 │   └── plugin.xml                    # Plugin descriptor
 └── themes/
-    ├── NordIslandsDark.theme.json    # UI theme (IDE chrome)
-    └── NordIslandsDark.xml           # Editor color scheme
+    ├── NordIslandsDark.theme.json    # Dark UI theme (IDE chrome)
+    ├── NordIslandsDark.xml           # Dark editor color scheme
+    ├── NordIslandsLight.theme.json   # Light UI theme (IDE chrome)
+    └── NordIslandsLight.xml          # Light editor color scheme
 ```
 
 ## License

@@ -1,0 +1,543 @@
+{
+  "name": "Nord Islands Light",
+  "dark": false,
+  "author": "nfantis",
+  "editorScheme": "/themes/NordIslandsLight.xml",
+  "colors": {
+    "polarNight0": "#2E3440",
+    "polarNight1": "#3B4252",
+    "polarNight2": "#434C5E",
+    "polarNight3": "#4C566A",
+    "snowStorm0": "#D8DEE9",
+    "snowStorm1": "#E5E9F0",
+    "snowStorm2": "#ECEFF4",
+    "frost0": "#8FBCBB",
+    "frost1": "#88C0D0",
+    "frost2": "#81A1C1",
+    "frost3": "#5E81AC",
+    "auroraRed": "#BF616A",
+    "auroraOrange": "#D08770",
+    "auroraYellow": "#EBCB8B",
+    "auroraGreen": "#A3BE8C",
+    "auroraPurple": "#B48EAD"
+  },
+  "ui": {
+    "*": {
+      "arc": 8,
+      "background": "snowStorm2",
+      "foreground": "polarNight0",
+      "selectionBackground": "snowStorm0",
+      "selectionForeground": "polarNight0",
+      "selectionInactiveBackground": "snowStorm1",
+      "inactiveBackground": "snowStorm2",
+      "disabledBackground": "snowStorm1",
+      "disabledForeground": "#9DA5B4",
+      "errorForeground": "auroraRed",
+      "borderColor": "snowStorm0",
+      "focusedBorderColor": "frost2",
+      "focusColor": "frost2",
+      "separatorColor": "snowStorm0"
+    },
+
+    "ActionButton": {
+      "hoverBackground": "snowStorm1",
+      "hoverBorderColor": "snowStorm1",
+      "pressedBackground": "snowStorm0",
+      "pressedBorderColor": "snowStorm0"
+    },
+
+    "Button": {
+      "arc": 8,
+      "background": "snowStorm1",
+      "foreground": "polarNight0",
+      "startBackground": "snowStorm1",
+      "endBackground": "snowStorm1",
+      "startBorderColor": "snowStorm0",
+      "endBorderColor": "snowStorm0",
+      "focusedBorderColor": "frost2",
+      "default": {
+        "foreground": "snowStorm2",
+        "startBackground": "frost3",
+        "endBackground": "frost3",
+        "startBorderColor": "frost2",
+        "endBorderColor": "frost2",
+        "focusedBorderColor": "frost1"
+      }
+    },
+
+    "CheckBox": {
+      "background": "snowStorm2",
+      "foreground": "polarNight0",
+      "select": "frost2"
+    },
+
+    "ComboBox": {
+      "background": "snowStorm1",
+      "foreground": "polarNight0",
+      "selectionBackground": "snowStorm0",
+      "selectionForeground": "polarNight0",
+      "nonEditableBackground": "snowStorm1",
+      "ArrowButton.iconColor": "polarNight0",
+      "ArrowButton.disabledIconColor": "#9DA5B4"
+    },
+
+    "CompletionPopup": {
+      "selectionBackground": "snowStorm0",
+      "selectionInactiveBackground": "snowStorm1",
+      "matchForeground": "frost3"
+    },
+
+    "Component": {
+      "focusColor": "frost2",
+      "borderColor": "snowStorm0",
+      "focusedBorderColor": "frost2",
+      "disabledBorderColor": "snowStorm0",
+      "errorFocusColor": "auroraRed",
+      "warningFocusColor": "auroraYellow",
+      "infoForeground": "polarNight3"
+    },
+
+    "Counter": {
+      "background": "frost3",
+      "foreground": "snowStorm2"
+    },
+
+    "DefaultTabs": {
+      "background": "snowStorm2",
+      "underlineColor": "frost2",
+      "inactiveUnderlineColor": "#9DA5B4",
+      "hoverBackground": "snowStorm1",
+      "underlineHeight": 3
+    },
+
+    "DragAndDrop": {
+      "areaBackground": "snowStorm1",
+      "areaBorderColor": "frost2",
+      "areaForeground": "polarNight0",
+      "rowBackground": "snowStorm1"
+    },
+
+    "Editor": {
+      "background": "snowStorm2",
+      "foreground": "polarNight0",
+      "shortcutForeground": "frost3"
+    },
+
+    "EditorTabs": {
+      "background": "snowStorm2",
+      "underlineColor": "frost2",
+      "underlineHeight": 3,
+      "hoverBackground": "snowStorm1",
+      "inactiveUnderlineColor": "#9DA5B4",
+      "underlinedTabBackground": "snowStorm2"
+    },
+
+    "FileColor": {
+      "Yellow": "#F5EFD9",
+      "Green": "#DEE8D6",
+      "Blue": "#ECEFF4",
+      "Violet": "#E8DDE8",
+      "Orange": "#F0E4D4",
+      "Rose": "#F2DBDD"
+    },
+
+    "GotItTooltip": {
+      "background": "snowStorm1",
+      "foreground": "polarNight0",
+      "borderColor": "snowStorm0",
+      "linkForeground": "frost3",
+      "Button.foreground": "snowStorm2",
+      "Button.startBackground": "frost3",
+      "Button.endBackground": "frost3",
+      "Button.startBorderColor": "frost2",
+      "Button.endBorderColor": "frost2"
+    },
+
+    "Group": {
+      "separatorColor": "snowStorm0"
+    },
+
+    "InternalFrame": {
+      "activeTitleBackground": "snowStorm1",
+      "activeTitleForeground": "polarNight0",
+      "inactiveTitleBackground": "snowStorm2",
+      "inactiveTitleForeground": "#9DA5B4"
+    },
+
+    "Label": {
+      "foreground": "polarNight0",
+      "disabledForeground": "#9DA5B4",
+      "errorForeground": "auroraRed",
+      "infoForeground": "polarNight3",
+      "successForeground": "auroraGreen"
+    },
+
+    "Link": {
+      "activeForeground": "frost3",
+      "hoverForeground": "frost3",
+      "visitedForeground": "auroraPurple",
+      "pressedForeground": "frost2",
+      "secondaryForeground": "frost0"
+    },
+
+    "List": {
+      "background": "snowStorm2",
+      "foreground": "polarNight0",
+      "selectionBackground": "snowStorm0",
+      "selectionForeground": "polarNight0",
+      "selectionInactiveBackground": "snowStorm1",
+      "selectionInactiveForeground": "polarNight0",
+      "hoverBackground": "snowStorm1"
+    },
+
+    "MainMenu": {
+      "selectionBackground": "snowStorm0",
+      "selectionForeground": "polarNight0"
+    },
+
+    "MainToolbar": {
+      "background": "snowStorm2",
+      "Dropdown.hoverBackground": "snowStorm1",
+      "Dropdown.pressedBackground": "snowStorm0",
+      "Icon.hoverBackground": "snowStorm1",
+      "Icon.pressedBackground": "snowStorm0",
+      "Tab.selectedBackground": "snowStorm1",
+      "Tab.selectedForeground": "polarNight0",
+      "Tab.hoverBackground": "snowStorm1",
+      "Tab.hoverInactiveBackground": "snowStorm1",
+      "Separators.color": "snowStorm0"
+    },
+
+    "Menu": {
+      "background": "snowStorm2",
+      "foreground": "polarNight0",
+      "selectionBackground": "snowStorm0",
+      "selectionForeground": "polarNight0",
+      "borderColor": "snowStorm0",
+      "separatorColor": "snowStorm0"
+    },
+
+    "MenuItem": {
+      "background": "snowStorm2",
+      "foreground": "polarNight0",
+      "selectionBackground": "snowStorm0",
+      "selectionForeground": "polarNight0",
+      "acceleratorForeground": "polarNight3"
+    },
+
+    "NavBar": {
+      "borderColor": "snowStorm0"
+    },
+
+    "NewUI": {
+      "Banner.errorBackground": "#F2DBDD",
+      "Banner.errorBorderColor": "auroraRed",
+      "Banner.infoBackground": "#D6E3EE",
+      "Banner.infoBorderColor": "frost2",
+      "Banner.successBackground": "#DEE8D6",
+      "Banner.successBorderColor": "auroraGreen",
+      "Banner.warningBackground": "#F0E4D4",
+      "Banner.warningBorderColor": "auroraYellow"
+    },
+
+    "Notification": {
+      "background": "snowStorm1",
+      "borderColor": "snowStorm0",
+      "errorBackground": "snowStorm1",
+      "errorBorderColor": "auroraRed",
+      "errorForeground": "polarNight0",
+      "ToolWindow.errorBackground": "snowStorm1",
+      "ToolWindow.errorBorderColor": "auroraRed",
+      "ToolWindow.warningBackground": "snowStorm1",
+      "ToolWindow.warningBorderColor": "auroraYellow",
+      "ToolWindow.informativeBackground": "snowStorm1",
+      "ToolWindow.informativeBorderColor": "frost2"
+    },
+
+    "Panel": {
+      "background": "snowStorm2",
+      "foreground": "polarNight0"
+    },
+
+    "PasswordField": {
+      "background": "snowStorm1",
+      "foreground": "polarNight0"
+    },
+
+    "Plugins": {
+      "background": "snowStorm2",
+      "SearchField.background": "snowStorm1",
+      "SectionHeader.background": "snowStorm1",
+      "SectionHeader.foreground": "polarNight0",
+      "tagBackground": "snowStorm0",
+      "tagForeground": "polarNight0",
+      "Button.installBackground": "frost3",
+      "Button.installForeground": "snowStorm2",
+      "Button.installBorderColor": "frost2",
+      "Button.installFillBackground": "frost3",
+      "Button.installFillForeground": "snowStorm2",
+      "Button.updateBackground": "auroraGreen",
+      "Button.updateForeground": "snowStorm2",
+      "lightSelectionBackground": "snowStorm1",
+      "hoverBackground": "snowStorm1"
+    },
+
+    "Popup": {
+      "background": "snowStorm2",
+      "Header.activeBackground": "snowStorm1",
+      "Header.inactiveBackground": "snowStorm2",
+      "paintBorder": true,
+      "borderColor": "snowStorm0",
+      "Toolbar.background": "snowStorm2",
+      "Toolbar.borderColor": "snowStorm0",
+      "Advertiser.background": "snowStorm2",
+      "Advertiser.foreground": "polarNight3"
+    },
+
+    "ProgressBar": {
+      "trackColor": "snowStorm0",
+      "progressColor": "frost2",
+      "indeterminateStartColor": "frost1",
+      "indeterminateEndColor": "frost3",
+      "failedColor": "auroraRed",
+      "failedEndColor": "auroraOrange",
+      "passedColor": "auroraGreen",
+      "passedEndColor": "auroraGreen"
+    },
+
+    "RunWidget": {
+      "background": "snowStorm1",
+      "foreground": "polarNight0",
+      "runningBackground": "#D5E8DC",
+      "runningForeground": "#3D7A4A",
+      "runningIconColor": "#3D7A4A",
+      "stopBackground": "#E8D5D5",
+      "stopForeground": "auroraRed"
+    },
+
+    "ScrollBar": {
+      "Mac.Transparent.thumbColor": "snowStorm0",
+      "Mac.Transparent.thumbBorderColor": "snowStorm0",
+      "Mac.Transparent.hoverThumbColor": "#C0C8D4",
+      "Mac.Transparent.hoverThumbBorderColor": "#C0C8D4",
+      "Mac.thumbColor": "snowStorm0",
+      "Mac.thumbBorderColor": "snowStorm0",
+      "Mac.hoverThumbColor": "#C0C8D4",
+      "Mac.hoverThumbBorderColor": "#C0C8D4",
+      "Transparent.thumbColor": "snowStorm0",
+      "Transparent.thumbBorderColor": "snowStorm0",
+      "Transparent.hoverThumbColor": "#C0C8D4",
+      "Transparent.hoverThumbBorderColor": "#C0C8D4",
+      "thumbColor": "snowStorm0",
+      "thumbBorderColor": "snowStorm0",
+      "hoverThumbColor": "#C0C8D4",
+      "hoverThumbBorderColor": "#C0C8D4",
+      "trackColor": "snowStorm2",
+      "hoverTrackColor": "snowStorm1"
+    },
+
+    "SearchEverywhere": {
+      "Header.background": "snowStorm2",
+      "SearchField.background": "snowStorm1",
+      "Tab.selectedBackground": "snowStorm0",
+      "Tab.selectedForeground": "polarNight0"
+    },
+
+    "SearchMatch": {
+      "startBackground": "#C0D0E0",
+      "endBackground": "#C0D0E0"
+    },
+
+    "SidePanel": {
+      "background": "snowStorm2"
+    },
+
+    "Slider": {
+      "trackColor": "snowStorm0",
+      "buttonColor": "frost2",
+      "buttonBorderColor": "frost2"
+    },
+
+    "SpeedSearch": {
+      "background": "snowStorm1",
+      "foreground": "polarNight0",
+      "borderColor": "frost2",
+      "errorForeground": "auroraRed"
+    },
+
+    "Spinner": {
+      "background": "snowStorm1"
+    },
+
+    "StatusBar": {
+      "background": "snowStorm2",
+      "borderColor": "snowStorm0",
+      "hoverBackground": "snowStorm1",
+      "Widget.hoverBackground": "snowStorm1"
+    },
+
+    "TabbedPane": {
+      "background": "snowStorm2",
+      "foreground": "polarNight0",
+      "contentAreaColor": "snowStorm2",
+      "hoverColor": "snowStorm1",
+      "underlineColor": "frost2",
+      "disabledUnderlineColor": "#9DA5B4",
+      "tabSelectionHeight": 3
+    },
+
+    "Table": {
+      "background": "snowStorm2",
+      "foreground": "polarNight0",
+      "selectionBackground": "snowStorm0",
+      "selectionForeground": "polarNight0",
+      "selectionInactiveBackground": "snowStorm1",
+      "selectionInactiveForeground": "polarNight0",
+      "gridColor": "snowStorm0",
+      "hoverBackground": "snowStorm1",
+      "lightSelectionBackground": "snowStorm0",
+      "lightSelectionForeground": "polarNight0",
+      "stripeColor": "snowStorm1"
+    },
+
+    "TextArea": {
+      "background": "snowStorm1",
+      "foreground": "polarNight0",
+      "selectionBackground": "snowStorm0",
+      "selectionForeground": "polarNight0"
+    },
+
+    "TextField": {
+      "background": "snowStorm1",
+      "foreground": "polarNight0",
+      "selectionBackground": "snowStorm0",
+      "selectionForeground": "polarNight0"
+    },
+
+    "TitlePane": {
+      "background": "snowStorm2",
+      "foreground": "polarNight0",
+      "Button.hoverBackground": "snowStorm0"
+    },
+
+    "ToggleButton": {
+      "onBackground": "frost2",
+      "onForeground": "snowStorm2",
+      "offBackground": "snowStorm0",
+      "offForeground": "polarNight0",
+      "buttonColor": "snowStorm2"
+    },
+
+    "ToolBar": {
+      "background": "snowStorm2",
+      "foreground": "polarNight0"
+    },
+
+    "ToolWindow": {
+      "background": "snowStorm2",
+      "Button.hoverBackground": "snowStorm1",
+      "Header.background": "snowStorm2",
+      "Header.inactiveBackground": "snowStorm2",
+      "Header.borderColor": "snowStorm0",
+      "HeaderTab.underlineColor": "frost2",
+      "HeaderTab.inactiveUnderlineColor": "#9DA5B4",
+      "HeaderTab.hoverBackground": "snowStorm1",
+      "HeaderTab.hoverInactiveBackground": "snowStorm1",
+      "HeaderTab.selectedInactiveBackground": "snowStorm2"
+    },
+
+    "ToolTip": {
+      "background": "snowStorm1",
+      "foreground": "polarNight0",
+      "borderColor": "snowStorm0",
+      "shortcutForeground": "frost3"
+    },
+
+    "Tree": {
+      "background": "snowStorm2",
+      "foreground": "polarNight0",
+      "selectionBackground": "snowStorm0",
+      "selectionForeground": "polarNight0",
+      "selectionInactiveBackground": "snowStorm1",
+      "modifiedItemForeground": "frost3",
+      "hoverBackground": "snowStorm1",
+      "rowHeight": 28
+    },
+
+    "ValidationTooltip": {
+      "errorBackground": "snowStorm1",
+      "errorBorderColor": "auroraRed",
+      "warningBackground": "snowStorm1",
+      "warningBorderColor": "auroraYellow"
+    },
+
+    "VersionControl": {
+      "GitLog.headIconColor": "frost3",
+      "GitLog.localBranchIconColor": "auroraGreen",
+      "GitLog.remoteBranchIconColor": "auroraPurple",
+      "GitLog.tagIconColor": "auroraYellow",
+      "GitLog.otherIconColor": "frost0",
+      "Log.Commit.currentBranchBackground": "#D8E4E8",
+      "Log.Commit.hoveredBackground": "snowStorm1",
+      "Log.Commit.selectedBackground": "snowStorm0",
+      "FileHistory.Commit.selectedBranchBackground": "#E5E9F0"
+    },
+
+    "WelcomeScreen": {
+      "background": "snowStorm2",
+      "borderColor": "snowStorm0",
+      "headerBackground": "snowStorm2",
+      "headerForeground": "polarNight0",
+      "separatorColor": "snowStorm0",
+      "Projects.background": "snowStorm2",
+      "Projects.selectionBackground": "snowStorm0",
+      "Projects.selectionInactiveBackground": "snowStorm1",
+      "Projects.actions.background": "snowStorm1"
+    }
+  },
+
+  "icons": {
+    "ColorPalette": {
+      "Actions.Grey": "polarNight3",
+      "Actions.Red": "auroraRed",
+      "Actions.Yellow": "auroraYellow",
+      "Actions.Green": "auroraGreen",
+      "Actions.Blue": "frost2",
+      "Actions.GreyInline": "#9DA5B4",
+      "Actions.GreyInline.Dark": "polarNight3",
+      "Objects.Grey": "polarNight3",
+      "Objects.RedStatus": "auroraRed",
+      "Objects.Red": "auroraRed",
+      "Objects.Pink": "auroraPurple",
+      "Objects.Yellow": "auroraYellow",
+      "Objects.Green": "auroraGreen",
+      "Objects.Blue": "frost2",
+      "Objects.Purple": "auroraPurple",
+      "Objects.BlackText": "polarNight0",
+      "Objects.YellowDark": "auroraOrange",
+      "Objects.GreenAndroid": "auroraGreen",
+      "Checkbox.Background.Default": "snowStorm2",
+      "Checkbox.Background.Default.Dark": "snowStorm2",
+      "Checkbox.Background.Selected": "frost2",
+      "Checkbox.Background.Selected.Dark": "frost2",
+      "Checkbox.Background.Disabled": "snowStorm1",
+      "Checkbox.Background.Disabled.Dark": "snowStorm1",
+      "Checkbox.Border.Default": "polarNight3",
+      "Checkbox.Border.Default.Dark": "polarNight3",
+      "Checkbox.Border.Selected": "frost2",
+      "Checkbox.Border.Selected.Dark": "frost2",
+      "Checkbox.Border.Disabled": "snowStorm0",
+      "Checkbox.Border.Disabled.Dark": "snowStorm0",
+      "Checkbox.Focus.Thin.Default": "frost2",
+      "Checkbox.Focus.Thin.Default.Dark": "frost2",
+      "Checkbox.Focus.Thin.Selected": "frost2",
+      "Checkbox.Focus.Thin.Selected.Dark": "frost2",
+      "Checkbox.Focus.Wide": "frost3",
+      "Checkbox.Focus.Wide.Dark": "frost3",
+      "Checkbox.Foreground.Disabled": "#9DA5B4",
+      "Checkbox.Foreground.Disabled.Dark": "#9DA5B4",
+      "Checkbox.Foreground.Selected": "snowStorm2",
+      "Checkbox.Foreground.Selected.Dark": "snowStorm2"
+    }
+  }
+}

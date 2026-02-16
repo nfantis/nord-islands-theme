@@ -1,9 +1,9 @@
 <idea-plugin>
     <id>com.github.nfantis.nord-islands-theme</id>
-    <name>Nord Islands Dark</name>
+    <name>Nord Islands</name>
     <vendor>nfantis</vendor>
     <description><![CDATA[
-        A dark theme combining the JetBrains Islands UI layout with the Nord color palette.
+        Dark and light themes combining the JetBrains Islands UI layout with the Nord color palette.
         Uses Nord's arctic blue-gray tones for all IDE chrome, panels, and editor highlighting.
     ]]></description>
 
@@ -12,5 +12,7 @@
     <extensions defaultExtensionNs="com.intellij">
         <themeProvider id="NordIslandsDark"
                        path="/themes/NordIslandsDark.theme.json"/>
+        <themeProvider id="NordIslandsLight"
+                       path="/themes/NordIslandsLight.theme.json"/>
     </extensions>
 </idea-plugin>
