@@ -80,8 +80,8 @@ The distributable plugin ZIP will be in `build/distributions/`.
 
 Theme files for [btop](https://github.com/aristocratos/btop) are included for both variants:
 
-- [`nord-islands-dark.theme`](nord-islands-dark.theme) -- dark background (`#21252D`)
-- [`nord-islands-light.theme`](nord-islands-light.theme) -- light background (`#ECEFF4`)
+- [`nord-islands-dark.theme`](btop/nord-islands-dark.theme) -- dark background (`#21252D`)
+- [`nord-islands-light.theme`](btop/nord-islands-light.theme) -- light background (`#ECEFF4`)
 
 Unlike the built-in Nord btop theme (which uses the same blue-to-white gradient for every metric), Nord Islands uses **distinct, semantically meaningful gradients** leveraging the full Aurora and Frost palettes:
 
@@ -105,8 +105,8 @@ Each box section (CPU, Memory, Network, Processes) also has a distinct outline c
    mkdir -p ~/.config/btop/themes
 
    # Copy one or both themes
-   cp nord-islands-dark.theme ~/.config/btop/themes/
-   cp nord-islands-light.theme ~/.config/btop/themes/
+   cp btop/nord-islands-dark.theme ~/.config/btop/themes/
+   cp btop/nord-islands-light.theme ~/.config/btop/themes/
    ```
 
 2. In btop, press `Esc` to open the menu, select **Options**, and choose **nord-islands-dark** or **nord-islands-light** from the color theme list.
@@ -115,8 +115,8 @@ Each box section (CPU, Memory, Network, Processes) also has a distinct outline c
 
 iTerm2 color profiles are included for both variants:
 
-- [`Nord_Islands_Dark.itermcolors`](Nord_Islands_Dark.itermcolors) -- dark background (`#21252D`)
-- [`Nord_Islands_Light.itermcolors`](Nord_Islands_Light.itermcolors) -- light background (`#ECEFF4`)
+- [`Nord_Islands_Dark.itermcolors`](iterm/Nord_Islands_Dark.itermcolors) -- dark background (`#21252D`)
+- [`Nord_Islands_Light.itermcolors`](iterm/Nord_Islands_Light.itermcolors) -- light background (`#ECEFF4`)
 
 ![Nord Islands Dark iTerm2 colors](images/screenshot2.png)
 ![Nord Islands Light iTerm2 colors](images/screenshot4.png)
@@ -130,10 +130,12 @@ iTerm2 color profiles are included for both variants:
 ## Project Structure
 
 ```
-nord-islands-dark.theme               # btop dark theme
-nord-islands-light.theme               # btop light theme
-Nord_Islands_Dark.itermcolors          # iTerm2 dark profile
-Nord_Islands_Light.itermcolors         # iTerm2 light profile
+btop/
+├── nord-islands-dark.theme            # btop dark theme
+└── nord-islands-light.theme           # btop light theme
+iterm/
+├── Nord_Islands_Dark.itermcolors      # iTerm2 dark profile
+└── Nord_Islands_Light.itermcolors     # iTerm2 light profile
 src/main/resources/
 ├── META-INF/
 │   └── plugin.xml                    # Plugin descriptor
