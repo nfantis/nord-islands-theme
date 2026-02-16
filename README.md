@@ -1,6 +1,6 @@
 # Nord Islands
 
-Dark and light themes combining the [Nord](https://www.nordtheme.com/) color palette with a deeper background for improved contrast. Includes themes for [JetBrains IDEs](https://plugins.jetbrains.com/docs/intellij/themes-getting-started.html) (Islands UI), [VS Code](https://code.visualstudio.com/), [btop](https://github.com/aristocratos/btop), and [iTerm2](https://iterm2.com/).
+Dark and light themes combining the [Nord](https://www.nordtheme.com/) color palette with a deeper background for improved contrast. Includes themes for [JetBrains IDEs](https://plugins.jetbrains.com/docs/intellij/themes-getting-started.html) (Islands UI), [VS Code](https://code.visualstudio.com/), [btop](https://github.com/aristocratos/btop), and [iTerm2](https://iterm2.com/), plus a bundled programming font.
 
 ## Nord Islands Dark
 
@@ -177,9 +177,23 @@ iTerm2 color profiles are included for both variants:
 2. Click **Color Presets... > Import...** and select the `.itermcolors` file.
 3. Select **Nord Islands Dark** or **Nord Islands Light** from the Color Presets dropdown.
 
+## Fonts
+
+The [`fonts/`](fonts/) directory includes [0xProto Nerd Font Mono](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/0xProto) -- a monospace programming font patched with [Nerd Fonts](https://www.nerdfonts.com/) icons. Three variants are provided:
+
+- **Regular** -- `0xProtoNerdFontMono-Regular.ttf`
+- **Bold** -- `0xProtoNerdFontMono-Bold.ttf`
+- **Italic** -- `0xProtoNerdFontMono-Italic.ttf`
+
+Install by double-clicking each `.ttf` file (macOS/Windows) or copying them to `~/.local/share/fonts/` (Linux), then select "0xProto Nerd Font Mono" as your editor/terminal font.
+
 ## Project Structure
 
 ```
+fonts/
+├── 0xProtoNerdFontMono-Bold.ttf       # 0xProto Nerd Font Mono (bold)
+├── 0xProtoNerdFontMono-Italic.ttf     # 0xProto Nerd Font Mono (italic)
+└── 0xProtoNerdFontMono-Regular.ttf    # 0xProto Nerd Font Mono (regular)
 btop/
 ├── nord-islands-dark.theme            # btop dark theme
 └── nord-islands-light.theme           # btop light theme
