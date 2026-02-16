@@ -2,7 +2,7 @@
 
 A dark theme for JetBrains IDEs combining the [Islands UI](https://plugins.jetbrains.com/docs/intellij/themes-getting-started.html) layout with the [Nord](https://www.nordtheme.com/) color palette. Uses Nord's arctic blue-gray tones for all IDE chrome, panels, and editor highlighting.
 
-![Nord Islands Dark screenshot](screenshot.png)
+![Nord Islands Dark screenshot](images/screenshot.png)
 
 ## Color Palette
 
@@ -69,6 +69,8 @@ The distributable plugin ZIP will be in `build/distributions/`.
 ## iTerm2 Theme
 
 An iTerm2 color profile is included at [`Nord_Islands_Dark.itermcolors`](Nord_Islands_Dark.itermcolors). It uses the same Nord palette as the JetBrains theme with the darker `#21252D` background.
+
+![Nord Islands Dark iTerm2 colors](images/screenshot2.png)
 
 ### Installation
 
