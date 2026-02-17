@@ -1,6 +1,6 @@
 # Nord Islands
 
-Dark and light themes combining the [Nord](https://www.nordtheme.com/) color palette with a deeper background for improved contrast. Includes themes for [JetBrains IDEs](https://plugins.jetbrains.com/docs/intellij/themes-getting-started.html) (Islands UI), [VS Code](https://code.visualstudio.com/), [btop](https://github.com/aristocratos/btop), and [iTerm2](https://iterm2.com/), plus a bundled programming font.
+Dark and light themes combining the [Nord](https://www.nordtheme.com/) color palette with a deeper background for improved contrast. Includes themes for [JetBrains IDEs](https://plugins.jetbrains.com/docs/intellij/themes-getting-started.html) (Islands UI), [VS Code](https://code.visualstudio.com/), [btop](https://github.com/aristocratos/btop), [iTerm2](https://iterm2.com/), and [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting), plus a bundled programming font.
 
 ## Nord Islands Dark
 
@@ -161,6 +161,23 @@ Each box section (CPU, Memory, Network, Processes) also has a distinct outline c
 
 2. In btop, press `Esc` to open the menu, select **Options**, and choose **nord-islands-dark** or **nord-islands-light** from the color theme list.
 
+## ZSH Syntax Highlighting
+
+A theme file for [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) is included:
+
+- [`nord-zsh-syntax-highlighting.zsh`](zsh/nord-zsh-syntax-highlighting.zsh)
+
+Colors are mapped consistently with the JetBrains and VS Code themes -- strings use **Aurora Green** (`#A3BE8C`), comments use the custom comment shade (`#616E88`), commands/builtins use **Aurora Yellow** (`#EBCB8B`), errors use **Aurora Red** (`#BF616A`), and special expansions use **Aurora Purple** (`#B48EAD`).
+
+### Installation
+
+Paste the contents of `zsh/nord-zsh-syntax-highlighting.zsh` into your `~/.zshrc` **before** the line that activates zsh-syntax-highlighting, or source it directly:
+
+```bash
+source /path/to/zsh/nord-zsh-syntax-highlighting.zsh
+source /path/to/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+```
+
 ## iTerm2 Themes
 
 iTerm2 color profiles are included for both variants:
@@ -201,6 +218,8 @@ btop/
 iterm/
 ├── Nord_Islands_Dark.itermcolors      # iTerm2 dark profile
 └── Nord_Islands_Light.itermcolors     # iTerm2 light profile
+zsh/
+└── nord-zsh-syntax-highlighting.zsh  # ZSH syntax highlighting theme
 vscode/
 ├── nord-islands-dark-color-theme.json # VS Code dark theme
 └── nord-islands-light-color-theme.json # VS Code light theme
