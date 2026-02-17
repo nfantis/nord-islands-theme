@@ -295,6 +295,11 @@
         <option name="FOREGROUND" value="B8860E" />
       </value>
     </option>
+    <option name="ANNOTATION_NAME_ATTRIBUTES">
+      <value>
+        <option name="FOREGROUND" value="B8860E" />
+      </value>
+    </option>
 
     <!-- Parameters -->
     <option name="DEFAULT_PARAMETER">

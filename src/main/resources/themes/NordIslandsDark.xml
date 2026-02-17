@@ -295,6 +295,11 @@
         <option name="FOREGROUND" value="EBCB8B" />
       </value>
     </option>
+    <option name="ANNOTATION_NAME_ATTRIBUTES">
+      <value>
+        <option name="FOREGROUND" value="EBCB8B" />
+      </value>
+    </option>
 
     <!-- Parameters -->
     <option name="DEFAULT_PARAMETER">

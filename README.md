@@ -71,7 +71,7 @@ The distributable plugin ZIP will be in `build/distributions/`.
 
 ### From disk
 
-1. Build the plugin (see above) or download the ZIP from [Releases](#).
+1. Use the pre-built [`nord-islands-theme-1.0.0.zip`](nord-islands-theme-1.0.0.zip) from the repository root, or build from source (see above).
 2. In your JetBrains IDE, go to **Settings > Plugins > Gear icon > Install Plugin from Disk...**
 3. Select the ZIP file and restart the IDE.
 4. Go to **Settings > Appearance & Behavior > Appearance** and select **Nord Islands Dark** or **Nord Islands Light**.
@@ -190,6 +190,7 @@ Install by double-clicking each `.ttf` file (macOS/Windows) or copying them to `
 ## Project Structure
 
 ```
+nord-islands-theme-1.0.0.zip              # Pre-built IntelliJ plugin
 fonts/
 ├── 0xProtoNerdFontMono-Bold.ttf       # 0xProto Nerd Font Mono (bold)
 ├── 0xProtoNerdFontMono-Italic.ttf     # 0xProto Nerd Font Mono (italic)
